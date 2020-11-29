@@ -95,9 +95,16 @@ h2 {
   padding-left: 10px; }
 
 @media (max-width: 540px) {
-  h1 {
+  h2 {
     font-size: 18px; } }
-
+p {
+  font-size: 16px;
+  padding-left: 50px;}
+@media (max-width: 540px) {
+  p {
+    font-size: 12px;
+    padding-top: 25px;
+    padding-left: 0px} }
 main img {
   width: 100%; }
 

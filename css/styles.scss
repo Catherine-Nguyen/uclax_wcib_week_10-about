@@ -1,5 +1,4 @@
 /* ---- reset ---- */
-
 body {
   margin: 0;
   background-color: #d3d6db;
@@ -17,6 +16,7 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-repeat:repeat-y;
 }
 
 body {
@@ -101,38 +101,16 @@ body {
     font-size: 20px;
     padding-left: 10px;}
   @media (max-width: 540px) {
-    h1 {
+    h2 {
       font-size: 18px;; } }
-
-  main img {
-    width: 100%; }
-  .gallery-image {
-    margin-bottom: 2rem;
-    position: relative; }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5); }
-  .gallery-image:hover .overlay {
-    opacity: 1; }
-  .overlay-text {
-    color: white;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center; }
+  p {
+    font-size: 16px;
+    padding-left: 50px;}
+  @media (max-width: 540px) {
+    p {
+      font-size: 12px;;
+      padding-top: 25px;
+      padding-left: 0px;} }
 
   footer {
     padding-top: 3rem;
@@ -159,4 +137,23 @@ body {
       margin-left: 50px;
       margin-right: 50px;
       margin-bottom: -20px;
+    }
+
+  main {
+      padding-left: 30%;
+      padding-right: 30%; }
+    @media (max-width: 992px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%; } }
+    @media (max-width: 768px) {
+      main {
+        text-align: center; } }
+    @media (max-width: 480px) {
+      main {
+        padding-left: 0;
+        padding-right: 0; } }
+  .self-portrait {
+      width: 50%;
+      height: auto;
     }
